@@ -59,7 +59,6 @@ int main(void) {
     	if(UART_bfnRead(&value))
     	{
     		value++;
-//    		value = 'A';
     		UART_bfnSend(&value);
     	}
     }

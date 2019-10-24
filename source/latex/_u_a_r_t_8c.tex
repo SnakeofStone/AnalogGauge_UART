@@ -1,0 +1,80 @@
+\hypertarget{_u_a_r_t_8c}{}\doxysection{U\+A\+R\+T.\+c File Reference}
+\label{_u_a_r_t_8c}\index{UART.c@{UART.c}}
+{\ttfamily \#include \char`\"{}M\+K\+L27\+Z644.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_af858294626d5da6c150af3872c38e94d}\label{_u_a_r_t_8c_af858294626d5da6c150af3872c38e94d}} 
+\#define \mbox{\hyperlink{_u_a_r_t_8c_af858294626d5da6c150af3872c38e94d}{M\+C\+G\+I\+R\+C\+L\+K\+\_\+\+C\+LK}}~3
+\begin{DoxyCompactList}\small\item\em Select the M\+C\+G\+I\+R\+C\+LK option with a 0b11 (0d3) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_a84be171d09e41014efa911989fffa5c8}\label{_u_a_r_t_8c_a84be171d09e41014efa911989fffa5c8}} 
+\#define \mbox{\hyperlink{_u_a_r_t_8c_a84be171d09e41014efa911989fffa5c8}{R\+D\+R\+F\+\_\+\+M\+A\+SK}}~(1$<$$<$21)
+\begin{DoxyCompactList}\small\item\em Mask to read the value in the Receive Data Register Full Flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_a72d35ad5d774871e470f81c1ea214eaa}\label{_u_a_r_t_8c_a72d35ad5d774871e470f81c1ea214eaa}} 
+\#define \mbox{\hyperlink{_u_a_r_t_8c_a72d35ad5d774871e470f81c1ea214eaa}{T\+D\+R\+E\+\_\+\+M\+A\+SK}}~(1$<$$<$23)
+\begin{DoxyCompactList}\small\item\em Mask to read the value in the Transmit Data Register Empty Flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_aa6943d99168a0d718fab6753b77d41da}\label{_u_a_r_t_8c_aa6943d99168a0d718fab6753b77d41da}} 
+\#define \mbox{\hyperlink{_u_a_r_t_8c_aa6943d99168a0d718fab6753b77d41da}{R\+A\+F\+\_\+\+M\+A\+SK}}~(1$<$$<$24)
+\begin{DoxyCompactList}\small\item\em Mask to read the value in the Receiver Active Flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_a760facc64b205b513af64b12550ddbb9}\label{_u_a_r_t_8c_a760facc64b205b513af64b12550ddbb9}} 
+\#define \mbox{\hyperlink{_u_a_r_t_8c_a760facc64b205b513af64b12550ddbb9}{D\+A\+T\+A\+\_\+\+R\+E\+A\+D\+\_\+\+M\+A\+SK}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em Mask to read the value in the D\+A\+TA buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_u_a_r_t_8c_a7a7445c46bba331639c1dec744e90982}\label{_u_a_r_t_8c_a7a7445c46bba331639c1dec744e90982}} 
+void \mbox{\hyperlink{_u_a_r_t_8c_a7a7445c46bba331639c1dec744e90982}{U\+A\+R\+T\+\_\+vfn\+Driver\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the required elements for L\+P\+U\+A\+R\+T0 to work. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_u_a_r_t_8c_a761c09f9dc1d7cfe9310c6bc02d67d16}{U\+A\+R\+T\+\_\+bfn\+Read}} (uint8\+\_\+t $\ast$read\+Val)
+\begin{DoxyCompactList}\small\item\em Read and store the value from the D\+A\+TA buffer if a valid packet was read from the U\+A\+RT communication. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{_u_a_r_t_8c_aa26ca7dc6fcf12d45330282050a03586}{U\+A\+R\+T\+\_\+bfn\+Send}} (uint8\+\_\+t $\ast$send\+Val)
+\begin{DoxyCompactList}\small\item\em Send a byte through U\+A\+RT communication if the D\+A\+TA buffer is available. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jorge Rubén Curiel Anaya 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+October 24th, 2019 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_a_r_t_8c_a761c09f9dc1d7cfe9310c6bc02d67d16}\label{_u_a_r_t_8c_a761c09f9dc1d7cfe9310c6bc02d67d16}} 
+\index{UART.c@{UART.c}!UART\_bfnRead@{UART\_bfnRead}}
+\index{UART\_bfnRead@{UART\_bfnRead}!UART.c@{UART.c}}
+\doxysubsubsection{\texorpdfstring{UART\_bfnRead()}{UART\_bfnRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t U\+A\+R\+T\+\_\+bfn\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{read\+Val }\end{DoxyParamCaption})}
+
+
+
+Read and store the value from the D\+A\+TA buffer if a valid packet was read from the U\+A\+RT communication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+Val} & Variable pointer where the read value by the U\+A\+RT buffer will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If reading the value was successful, returns True (1); else, returns False (0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t_8c_aa26ca7dc6fcf12d45330282050a03586}\label{_u_a_r_t_8c_aa26ca7dc6fcf12d45330282050a03586}} 
+\index{UART.c@{UART.c}!UART\_bfnSend@{UART\_bfnSend}}
+\index{UART\_bfnSend@{UART\_bfnSend}!UART.c@{UART.c}}
+\doxysubsubsection{\texorpdfstring{UART\_bfnSend()}{UART\_bfnSend()}}
+{\footnotesize\ttfamily uint8\+\_\+t U\+A\+R\+T\+\_\+bfn\+Send (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{send\+Val }\end{DoxyParamCaption})}
+
+
+
+Send a byte through U\+A\+RT communication if the D\+A\+TA buffer is available. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em send\+Val} & Variable pointer where the value to be sent through U\+A\+RT is stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If sending the value was successful, returns True (1); else, returns False (0) 
+\end{DoxyReturn}

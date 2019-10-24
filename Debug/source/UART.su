@@ -1,0 +1,3 @@
+UART.c:99:6:UART_vfnDriverInit	8	static
+UART.c:135:9:UART_bfnRead	16	static
+UART.c:154:9:UART_bfnSend	16	static

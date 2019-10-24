@@ -81,6 +81,12 @@
  	 \brief	Mask to set the receiver enable bit
  */
 #define LPUART0_CTRL_RE		(1<<18)
+
+/*!
+ 	 \def	SBNS_MASK
+ 	 \brief	Mask to set the receiver enable bit
+ */
+#define SBNS_MASK			(1<<13)
 //------------------------------------------------------------------------------
 // Variables
 //------------------------------------------------------------------------------
@@ -117,6 +123,9 @@ void UART_vfnDriverInit(void)
 
 	// Set the Transmit enable bit
 	LPUART0->CTRL |= LPUART0_CTRL_TE;
+
+	// Set the SBNS bit for two stop bits configuration
+	LPUART0->BAUD |= SBNS_MASK;
 
 	// Set the UART pins as:
 	//		PTA1 -> LPUART0_RX

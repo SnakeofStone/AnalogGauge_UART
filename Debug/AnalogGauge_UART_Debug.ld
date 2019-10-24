@@ -6,7 +6,7 @@
  * Generated linker script file for MKL27Z64xxx4
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.0.1 [Build 2563] [2019-09-01] on Oct 24, 2019 5:08:35 PM
+ * MCUXpresso IDE v11.0.1 [Build 2563] [2019-09-01] on Oct 24, 2019 5:20:10 PM
  */
 
 INCLUDE "AnalogGauge_UART_Debug_library.ld"

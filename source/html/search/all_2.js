@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mcgirclk_5fclk_2',['MCGIRCLK_CLK',['../_u_a_r_t_8c.html#af858294626d5da6c150af3872c38e94d',1,'UART.c']]],
-  ['mtb_2ec_3',['mtb.c',['../mtb_8c.html',1,'']]]
+  ['lpuart0_5fctrl_5fre_2',['LPUART0_CTRL_RE',['../_u_a_r_t_8c.html#adc9fd8c810e7f10a681fd58547771442',1,'UART.c']]],
+  ['lpuart0_5fctrl_5fte_3',['LPUART0_CTRL_TE',['../_u_a_r_t_8c.html#aa8aba19530663cdd8a9e849e93ae8c6d',1,'UART.c']]]
 ];

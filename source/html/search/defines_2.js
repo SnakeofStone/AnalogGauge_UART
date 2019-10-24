@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['raf_5fmask_21',['RAF_MASK',['../_u_a_r_t_8c.html#aa6943d99168a0d718fab6753b77d41da',1,'UART.c']]],
-  ['rdrf_5fmask_22',['RDRF_MASK',['../_u_a_r_t_8c.html#a84be171d09e41014efa911989fffa5c8',1,'UART.c']]]
+  ['mcgirclk_5fclk_29',['MCGIRCLK_CLK',['../_u_a_r_t_8c.html#af858294626d5da6c150af3872c38e94d',1,'UART.c']]]
 ];

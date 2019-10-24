@@ -100,6 +100,8 @@
 //------------------------------------------------------------------------------
 /*!
     \fn				void UART_vfnDriverInit(void)
+    \param			void No params
+    \return			No returns
     \brief			Initialize the required elements for LPUART0 to work
 */
 void UART_vfnDriverInit(void)

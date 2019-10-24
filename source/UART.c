@@ -4,7 +4,7 @@
 	\file		UART.c
 	\author		Jorge Rubén Curiel Anaya
 	\date		October 24th, 2019
-	\brief
+	\brief		Implementation of the UART driver functions
 */
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
